@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Юлия Тюлькина</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container menu">
+            <a class="menu__logo" href="/">
+                <img src="images/Logo.svg" alt="logo">
+            </a>
+            <nav>
+                <a class="menu__link" href="#about-me">Обо мне</a>
+                <a class="menu__link" href="#portfolio">Портфолио</a>
+                <a class="menu__link" href="#prices">Цены</a>
+                <a class="menu__link" href="#sign-in">Записаться</a>
+            </nav>
+            <a class="menu__tel" href="tel:380961195404">+380 (96) 119 54 04</a>
+        </div>
+        <!-- /.container -->
+        <div class="container header-greating">
+            <div class="header-greating__text-block">
+                <h1 class="header-greating__title">Юлия Тюлькина</h1>
+                <p class="header-greating__text">фотограф / видеооператор</p>
+                <a class="header-greating_btn" href="#sign-in">Записаться на фотоссесию</a>
+
+                <!-- вариант с кнопкой -->
+                <!-- <button>Записаться на фотоссесию</button> -->
+            </div>
+            <div class="header-greating__photo">
+                <img src="images/main_photo.jpg" alt="photo">
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+
+    <main>
+        <section class="about-me" id="about-me">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <div class="about-me__description">
+                    <div class="about-me__photo">
+                        <img src="images/about_me_1.jpg" alt="photo_Yuliia">
+                        <h3 class="about-me__title">Юлия Тюлькина</h3>
+                    </div>
+                    <!-- /.about-me-description -->
+                    <div class="about-me__acquaintance">
+                        <h3 class="about-me__subtitle">Привет! Меня зовут Юля, я фотограф из Винницы</h3>
+                        <p class="about-me__text">Занимаюсь фотографией более 2 лет. Люблю живые, естественные, теплые и
+                            эмоциональные кадры.
+                            Умею работать с такими инструментами как Photoshop, Lightroom.</p>
+                        <p class="about-me__text">Фотография для меня - это способ показать прекрасное в простоте, то
+                            есть открыть занавес
+                            изящного и ненавязчивого. Видеосъёмка является чем-то по особенному ценным, ведь можно
+                            запечатлеть момент навсегда и при этом оставить отпечаток в истории.</p>
+                        <div class="about-me__acquaintance-photo">
+                            <img src="images/about_me_2.jpg" alt="photo_Yuliia">
+                        </div>
+                    </div>
+                    <!-- /.about-me-acquaintance -->
+                </div>
+                <!-- /.about-me-description -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.about-me -->
+
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2>Портфолио</h2>
+                <div class="portfolio__cards">
+                    <div class="portfolio__card card">
+                        <img class="card__photo" src="images/section_photo1.jpg" alt="photo">
+                        <h4 class="card__title">Теплые фото у дома</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a class="card__link" href="#">Все фото</a>
+                    </div>
+                    <div class="portfolio__card card">
+                        <img class="card__photo" src="images/section_photo2.jpg" alt="photo">
+                        <h4 class="card__title">Утреняя видеосьемка</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis,
+                            natoque amet at
+                            hendrerit consectetur rhoncus.</p>
+                        <a class="card__link" href="#">Все фото</a>
+                    </div>
+                    <div class="portfolio__card card">
+                        <img class="card__photo" src="images/section_photo3.jpg" alt="photo">
+                        <h4 class="card__title">Фотосессия с цветами</h4>
+                        <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis,
+                            natoque amet.</p>
+                        <a class="card__link" href="#">Все фото</a>
+                    </div>
+                </div>
+                <!-- /.container-cards-photo -->
+            </div>
+            <!-- ./container -->
+        </section>
+        <!-- ./portfolio -->
+
+        <section class="prices" id="prices">
+            <div class="container">
+                <h2>Цены</h2>
+                <div class="prices__cards">
+                    <div class="prices__card card-price">
+                        <img class="card-price__img" src="images/price_1.jpg" alt="photo_Yuliia">
+                        <h3 class="card-price__title">Фотосессия</h3>
+                        <div class="card-price__info">
+                            <p class="card-price__text">Продолжительность <span class="card-price__bold">1 час</span>
+                            </p>
+                            <p class="card-price__text">Время обработки фото <span class="card-price__bold">5
+                                    дней</span>
+                            </p>
+                            <p class="card-price__text">Количество фото <span class="card-price__bold">20 штук</span>
+                            </p>
+                            <p class="card-price__price">200 грн
+                                <button class="card-price__btn">Заказать сейчас</button>
+                            </p>
+                        </div>
+                        <!-- ./card-price-item -->
+                    </div>
+                    <!-- ./card-price one-->
+                    <div class="prices__card card-price">
+                        <img class="card-price__img" src="images/price_2.jpg" alt="photo_Yuliia">
+                        <h3 class="card-price__title">Видеосъемка</h3>
+                        <div class="card-price__info">
+                            <p class="card-price__text">Продолжительность <span class="card-price__bold">1 час</span>
+                            </p>
+                            <p class="card-price__text">Время обработки фото <span class="card-price__bold">5
+                                    дней</span>
+                            </p>
+                            <p class="card-price__text">Количество фото <span class="card-price__bold">20 штук</span>
+                            </p>
+                            <p class="card-price__price">300 грн
+                                <button class="card-price__btn">Заказать сейчас</button>
+                            </p>
+                        </div>
+                        <!-- ./card-price-item -->
+                    </div>
+                    <!-- ./card-price two-->
+                </div>
+                <!-- ./container-cards-price -->
+            </div>
+            <!-- ./container -->
+        </section>
+        <!-- ./prices -->
+
+        <section class="sign-in" id="sign-in">
+            <div class="container">
+                <h2>Записаться к Юле</h2>
+                <div class="sign-in__block">
+                    <div class="sign-in__photo">
+                        <img src="images/sign_up_1.jpg" alt="photo_Yuliia">
+                        <img src="images/sign_up_2.jpg" alt="photo_Yuliia">
+                    </div>
+                    <!-- ./block-sign-in-photo -->
+                    <div class="sign-in__form">
+                        <form action="#" autocomplete>
+                            <input type="text" name="name" placeholder="Имя ..." required>
+                            <input type="email" name="email" placeholder="E-mail ..." required>
+                            <textarea name="coment" placeholder="Сообщение ..."></textarea>
+                            <input type="submit" value="Отправить">
+
+                            <!-- вариант с кнопкой -->
+                            <!-- <button class="submit">Отправить</button> -->
+                        </form>
+                    </div>
+                    <!-- ./block-sign-in-photo -->
+                </div>
+                <!-- ./block-sign-in -->
+            </div>
+            <!-- ./container -->
+        </section>
+        <!-- ./sign-in -->
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <a class="footer__logo" href="/">
+                <img src="images/Logo.svg" alt="logo">
+            </a>
+            <div class="footer__icons">
+                <a class="footer__link instagram" href="https://www.instagram.com/" target="_blank"></a>
+                <a class="footer__link facebook" href="https://facebook.com/" target="_blank"></a>
+                <a class="footer__link mail" href="mailto:#"></a>
+            </div>
+            <a class="footer__tel" href="tel:+380961195404">+380 (96) 119 54 04</a>
+        </div>
+    </footer>
+</body>
+
+</html>

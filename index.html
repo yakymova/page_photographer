@@ -18,20 +18,25 @@
             <a class="menu__logo" href="/">
                 <img src="images/Logo.svg" alt="logo">
             </a>
-            <nav>
+            <nav class="menu__items">
                 <a class="menu__link" href="#about-me">Обо мне</a>
                 <a class="menu__link" href="#portfolio">Портфолио</a>
                 <a class="menu__link" href="#prices">Цены</a>
                 <a class="menu__link" href="#sign-in">Записаться</a>
             </nav>
-            <a class="menu__tel" href="tel:380961195404">+380 (96) 119 54 04</a>
+            <a class="menu__tel" href="tel:380961195404">+380(96) 119 54 04</a>
+            <div class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <!-- /.container -->
         <div class="container header-greating">
             <div class="header-greating__text-block">
                 <h1 class="header-greating__title">Юлия Тюлькина</h1>
                 <p class="header-greating__text">фотограф / видеооператор</p>
-                <a class="header-greating_btn" href="#sign-in">Записаться на фотоссесию</a>
+                <a class="header-greating__btn" href="#sign-in">Записаться на фотоссесию</a>
 
                 <!-- вариант с кнопкой -->
                 <!-- <button>Записаться на фотоссесию</button> -->
@@ -44,7 +49,7 @@
     </header>
 
     <main>
-        <section class="about-me" id="about-me">
+        <section class="about-me" id="about-me" data-hidden="true">
             <div class="container">
                 <h2>Обо мне</h2>
                 <div class="about-me__description">
@@ -76,24 +81,30 @@
 
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <h2>Портфолио</h2>
+                <h2 data-hidden="true">Портфолио</h2>
                 <div class="portfolio__cards">
-                    <div class="portfolio__card card">
-                        <img class="card__photo" src="images/section_photo1.jpg" alt="photo">
+                    <div class="portfolio__card card" data-hidden="true">
+                        <div class="card__photo">
+                            <img src="images/section_photo1.jpg" alt="photo">
+                        </div>
                         <h4 class="card__title">Теплые фото у дома</h4>
                         <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <a class="card__link" href="#">Все фото</a>
                     </div>
-                    <div class="portfolio__card card">
-                        <img class="card__photo" src="images/section_photo2.jpg" alt="photo">
+                    <div class="portfolio__card card" data-hidden="true">
+                        <div class="card__photo">
+                            <img src="images/section_photo2.jpg" alt="photo">
+                        </div>
                         <h4 class="card__title">Утреняя видеосьемка</h4>
                         <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis,
                             natoque amet at
                             hendrerit consectetur rhoncus.</p>
                         <a class="card__link" href="#">Все фото</a>
                     </div>
-                    <div class="portfolio__card card">
-                        <img class="card__photo" src="images/section_photo3.jpg" alt="photo">
+                    <div class="portfolio__card card" data-hidden="true">
+                        <div class="card__photo">
+                            <img src="images/section_photo3.jpg" alt="photo">
+                        </div>
                         <h4 class="card__title">Фотосессия с цветами</h4>
                         <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis,
                             natoque amet.</p>
@@ -108,10 +119,12 @@
 
         <section class="prices" id="prices">
             <div class="container">
-                <h2>Цены</h2>
+                <h2 data-hidden="true">Цены</h2>
                 <div class="prices__cards">
-                    <div class="prices__card card-price">
-                        <img class="card-price__img" src="images/price_1.jpg" alt="photo_Yuliia">
+                    <div class="prices__card card-price" data-hidden="true">
+                        <div class="card-price__img">
+                            <img src="images/price_1.jpg" alt="photo_Yuliia">
+                        </div>
                         <h3 class="card-price__title">Фотосессия</h3>
                         <div class="card-price__info">
                             <p class="card-price__text">Продолжительность <span class="card-price__bold">1 час</span>
@@ -128,8 +141,10 @@
                         <!-- ./card-price-item -->
                     </div>
                     <!-- ./card-price one-->
-                    <div class="prices__card card-price">
-                        <img class="card-price__img" src="images/price_2.jpg" alt="photo_Yuliia">
+                    <div class="prices__card card-price" data-hidden="true">
+                        <div class="card-price__img">
+                            <img src="images/price_2.jpg" alt="photo_Yuliia">
+                        </div>
                         <h3 class="card-price__title">Видеосъемка</h3>
                         <div class="card-price__info">
                             <p class="card-price__text">Продолжительность <span class="card-price__bold">1 час</span>
@@ -155,14 +170,18 @@
 
         <section class="sign-in" id="sign-in">
             <div class="container">
-                <h2>Записаться к Юле</h2>
+                <h2 data-hidden="true">Записаться к Юле</h2>
                 <div class="sign-in__block">
-                    <div class="sign-in__photo">
-                        <img src="images/sign_up_1.jpg" alt="photo_Yuliia">
-                        <img src="images/sign_up_2.jpg" alt="photo_Yuliia">
+                    <div class="sign-in__photo" data-hidden="true">
+                        <div>
+                            <img src="images/sign_up_1.jpg" alt="photo_Yuliia">
+                        </div>
+                        <div>
+                            <img src="images/sign_up_2.jpg" alt="photo_Yuliia">
+                        </div>
                     </div>
                     <!-- ./block-sign-in-photo -->
-                    <div class="sign-in__form">
+                    <div class="sign-in__form" data-hidden="true">
                         <form action="#" autocomplete>
                             <input type="text" name="name" placeholder="Имя ..." required>
                             <input type="email" name="email" placeholder="E-mail ..." required>
@@ -195,6 +214,8 @@
             <a class="footer__tel" href="tel:+380961195404">+380 (96) 119 54 04</a>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
